@@ -1,0 +1,64 @@
+@import '../utils/style/theme.scss';
+
+.collapse {
+  margin-bottom: 30px;
+  flex: 1;
+
+  .collapse__dt {
+    background-color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    line-height: 54px;
+    border-radius: 5px;
+    padding: 0 10px;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+
+    .collapse__dt__button {
+      border: none;
+      background: none;
+
+      transition-duration: 1s;
+      transition-property: transform;
+    }
+
+    .collapse__dt__button--open {
+      transform: rotate(0deg);
+    }
+
+    .collapse__dt__button--close {
+      transform: rotate(180deg);
+    }
+  }
+
+  .dd__overflow {
+    overflow: hidden;
+
+    .collapse__dd {
+
+      background-color: $background-color;
+      border-radius: 0 0 5px 5px;
+      overflow: hidden;
+
+      transition: all 1s ease;
+    }
+
+    .collapse__dd--open {
+      padding: 20px;
+      margin-top: 0;
+    }
+
+    .collapse__dd--close {
+      padding: 0px 20px;
+      margin-top: -100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .collapse {
+    margin-top: 2em;
+  }
+}

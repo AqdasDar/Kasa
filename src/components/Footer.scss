@@ -1,0 +1,37 @@
+@import '../utils/style/theme.scss';
+
+.footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 50px 0 20px;
+  margin: 0;
+  margin-top: 40px;
+
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+
+  .footer__logo {
+    width: 122px;
+    height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .footer__p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .footer {
+    padding: 50px 0 50px;
+    margin-top: 5vw;
+
+    .footer__p {
+      font-size: 14px;
+    }
+  }
+}

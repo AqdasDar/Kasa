@@ -1,0 +1,67 @@
+.logement {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.logement .logement__left {
+  margin-top: 20px;
+}
+.logement .logement__left .logement__left__h1 {
+  color: #FF6060;
+  font-weight: 500;
+  font-size: 36px;
+}
+.logement .logement__left .logement__left__p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.logement .logement__left .logement__left__tag {
+  color: white;
+  background-color: #FF6060;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  display: inline-block;
+  min-width: 115px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.logement__collapses {
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+}
+.logement__collapses.logement__collapses > .collapse {
+  margin: 0px;
+}
+.logement__collapses.logement__collapses > .collapse .collapse__dd {
+  width: 95%;
+}
+.logement__collapses.logement__collapses > .collapse .collapse__dt {
+  width: 95%;
+}
+
+@media screen and (max-width: 1240px) {
+  .logement {
+    flex-direction: column;
+  }
+  .logement .logement__right {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logement__collapses {
+    flex-direction: column;
+  }
+  .logement__collapses.logement__collapses > .collapse {
+    width: 90vw;
+  }
+}
+
+/*# sourceMappingURL=Logement.css.map */

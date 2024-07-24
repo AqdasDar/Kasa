@@ -1,0 +1,32 @@
+@import '../utils/style/theme.scss';
+
+.home {
+  .home__div {
+    background-color: $background-color;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: $marge;
+    padding-left: $marge;
+  }
+}
+
+.link__card {
+  margin-top: $marge;
+  margin-right: $marge;
+}
+
+@media screen and (max-width: 1240px) {
+  .home {
+    .home__div {
+      flex-direction: column;
+      padding: 0;
+      background-color: white;
+
+      .link__card {
+        margin: 0;
+      }
+    }
+  }
+
+}

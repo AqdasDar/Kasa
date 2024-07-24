@@ -1,0 +1,26 @@
+.home .home__div {
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 31px;
+  padding-left: 31px;
+}
+
+.link__card {
+  margin-top: 31px;
+  margin-right: 31px;
+}
+
+@media screen and (max-width: 1240px) {
+  .home .home__div {
+    flex-direction: column;
+    padding: 0;
+    background-color: white;
+  }
+  .home .home__div .link__card {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,52 @@
+.collapse {
+  margin-bottom: 30px;
+  flex: 1;
+}
+.collapse .collapse__dt {
+  background-color: #FF6060;
+  display: flex;
+  justify-content: space-between;
+  line-height: 54px;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+.collapse .collapse__dt .collapse__dt__button {
+  border: none;
+  background: none;
+  transition-duration: 1s;
+  transition-property: transform;
+}
+.collapse .collapse__dt .collapse__dt__button--open {
+  transform: rotate(0deg);
+}
+.collapse .collapse__dt .collapse__dt__button--close {
+  transform: rotate(180deg);
+}
+.collapse .dd__overflow {
+  overflow: hidden;
+}
+.collapse .dd__overflow .collapse__dd {
+  background-color: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+.collapse .dd__overflow .collapse__dd--open {
+  padding: 20px;
+  margin-top: 0;
+}
+.collapse .dd__overflow .collapse__dd--close {
+  padding: 0px 20px;
+  margin-top: -100%;
+}
+
+@media screen and (max-width: 1240px) {
+  .collapse {
+    margin-top: 2em;
+  }
+}
+
+/*# sourceMappingURL=Collapse.css.map */

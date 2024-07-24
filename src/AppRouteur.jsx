@@ -1,20 +1,25 @@
-import React from 'react';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Home from './Home.jsx'
-import Fiche_Logement from "./Fiche_Logement.jsx";
-import A_Propos from "./A_Propos.jsx";
-import NotFoundPage from "./NotFoundPage";
+
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+
+import Home from './pages/Home.jsx';
+import Logement from "./pages/Logement.jsx";
+import A_Propos from "./pages/A_Propos.jsx";
+import NotFoundPage from "./pages/NotFoundPage";
 
 
 function AppRouteur() {
     return (
         <BrowserRouter>
+            <Header/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/logement" element={<Fiche_Logement/>}/>
-                <Route path="/a-propos" element={<A_Propos/>}/>
+                <Route path="/Logement/:id" element={<Logement/>}/>
+                <Route path="/a_propos" element={<A_Propos/>}/>
                 <Route path="*" element={<NotFoundPage/>}/>
             </Routes>
+            <Footer/>
         </BrowserRouter>
     );
 }

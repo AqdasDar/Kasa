@@ -1,0 +1,49 @@
+.error {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+.error .error__h1 {
+  color: #FF6060;
+  font-weight: 700;
+  font-size: 288px;
+  line-height: 410px;
+  margin: 0;
+}
+.error .error__p {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51px;
+  color: #FF6060;
+}
+.error .error__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1240px) {
+  .error {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 80vw;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .error .error__h1 {
+    font-size: 96px;
+    line-height: 140px;
+  }
+  .error .error__p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+/*# sourceMappingURL=NotFoundPage.css.map */
