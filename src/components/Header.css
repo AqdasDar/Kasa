@@ -18,7 +18,10 @@
   text-decoration: none;
   color: black;
 }
-.header.header > nav .header__a.header__a:hover {
+.header.header > nav .header__a.active {
+  text-decoration: underline;
+}
+.header.header > nav .header__a:hover {
   text-decoration: underline;
 }
 
